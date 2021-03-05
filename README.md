@@ -9,5 +9,5 @@ de comunicatii*. Enunturile exercitiilor se gasesc [aici](https://ocw.cs.pub.ro/
 Pe scurt, fiecare lab a avut ca scop urmatoarele:
 
 * lab01:
-... * notiuni generale despre Linux si despre limbajul C
-... * implementarea utilitarelor *cat* si *tac*
+  * notiuni generale despre Linux si despre limbajul C
+  * implementarea utilitarelor *cat* si *tac*
