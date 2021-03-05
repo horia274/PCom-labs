@@ -1,7 +1,7 @@
 # PCom-labs
 
 Repo-ul contine implementarile personale din cadrul laboratorului de *Protocoale
-de comunicatii*. Enunturile exercitiilor se gasesc [aici](https://ocw.cs.pub.ro/courses/pc), la ssectiunea
+de comunicatii*. Enunturile exercitiilor se gasesc [aici](https://ocw.cs.pub.ro/courses/pc), la sectiunea
 *Laboratoare*.
 
 ## Continut laburi
