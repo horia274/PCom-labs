@@ -18,3 +18,11 @@ se pot gasi in *readme-ul* aferent fiecarui lab:
   * implementarea unui sistem care simuleaza transmisia si receptia simultana
   a continutului a doua fisiere (merge pentru oricat de multe fisiere); sender-ul
   transmite iar receiver-ul primeste si scrie continul intr-un fisier
+
+* lab03:
+  * protocolul fereastra glisanta
+  * simularea unei transmisii in stilul acestui protocol - sender-ul trimite *w*
+  mesaje, apoi asteapta de la receiver cate un ACK pentru fiecare mesaj, iar
+  in momentul in care il primeste, continua sa transmita inca un mesaj; in final
+  sender-ul va receptiona ultimele *w* ACK-uri de la receiver
+  * o modalitate de detectie a erorilor de transmisie - *Longitudinal Redundancy Check (Parity Word)*
