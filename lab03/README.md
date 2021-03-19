@@ -42,14 +42,14 @@ adaugat urmoarele linii de cod in fisicerul **recv.c**, intre partea de
 
 ```
 char *copy = strdup(r.payload);
-	char *check = strtok(copy, " ");
-    check = strtok(NULL, " ");
-    check = strtok(NULL, " ");
+char *check = strtok(copy, " ");
+check = strtok(NULL, " ");
+check = strtok(NULL, " ");
 
-    if (atoi(check) != i) {
-        printf("message number %d is lost\n", i);
-        return -1;
-    }
+if (atoi(check) != i) {
+    printf("message number %d is lost\n", i);
+    return -1;
+}
 ```
 
 Practic verific daca indicele mesajului receptionat corespunde cu cel care ar fi
