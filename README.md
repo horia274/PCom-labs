@@ -26,3 +26,8 @@ se pot gasi in *readme-ul* aferent fiecarui lab:
   in momentul in care il primeste, continua sa transmita inca un mesaj; in final
   sender-ul va receptiona ultimele *w* ACK-uri de la receiver
   * o modalitate de detectie a erorilor de transmisie - *Longitudinal Redundancy Check (Parity Word)*
+
+* lab04:
+  * implementarea unui router si a unui algoritm de rutare
+  * este simulata transimisia unui pachet de la o sursa la o destinatie folosind
+  protocolul *Ethernet*
