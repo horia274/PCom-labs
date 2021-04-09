@@ -30,4 +30,12 @@ se pot gasi in *readme-ul* aferent fiecarui lab:
 * lab04:
   * implementarea unui router si a unui algoritm de rutare
   * este simulata transimisia unui pachet de la o sursa la o destinatie folosind
-  protocolul *Ethernet*
+  protocoalele *Ethernet* si *IP*
+
+* lab05:
+  * folosirea protocolui *ICMP* pentru a trasmite diverse mesaje
+  * implementarea comenzilor *ping* si *traceroute*
+
+* lab06:
+  * socketi UDP
+  * transmisia unui fisier folosind socketi *UDP* de la client la server
