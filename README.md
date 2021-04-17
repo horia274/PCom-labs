@@ -39,3 +39,7 @@ se pot gasi in *readme-ul* aferent fiecarui lab:
 * lab06:
   * socketi UDP
   * transmisia unui fisier folosind socketi *UDP* de la client la server
+
+* lab07:
+  * socketi TCP
+  * simularea unui chat intre doi clienti conectati la un server
