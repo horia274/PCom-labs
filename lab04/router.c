@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 		struct ether_header *eth_hdr = (struct ether_header *)m.payload;
 		struct iphdr *ip_hdr = (struct iphdr *)(m.payload + sizeof(struct ether_header));
 		/* TODO 3: Check the checksum */
-		if (ip_checksum(ip_hdr, sizeof(struct iphdr)) != 0) {
+		if (ip_checksum(ip_hdr, sizeof(struct iphdr))) {
 			continue;
 		}
 
@@ -81,11 +81,11 @@ int main(int argc, char *argv[])
 		ip_hdr->check = ip_checksum(ip_hdr, sizeof(struct iphdr));
 
 		/* TODO 7: Find matching ARP entry and update Ethernet addresses */
-		struct arp_entry *arp_dest = get_arp_entry(ip_hdr->daddr);
-		get_interface_mac(best_route->interface, eth_hdr->ether_shost);
-		memcpy(eth_hdr->ether_dhost, arp_dest->mac, sizeof(arp_dest->mac));        
+		struct arp_entry *arp_dest = get_arp_entry(best_route->next_hop);
 
 		/* TODO 8: Forward the pachet to best_route->interface */
+		get_interface_mac(best_route->interface, eth_hdr->ether_shost);
+		memcpy(eth_hdr->ether_dhost, arp_dest->mac, sizeof(arp_dest->mac)); 
 		send_packet(best_route->interface, &m);
 	}
 }
