@@ -140,7 +140,7 @@ void traceroute(int sockfd, struct in_addr ip_addr)
 		ip_hdr->check = 0;
 		get_interface_ip(sockfd, IFNAME, &ip_hdr->saddr);
 		ip_hdr->daddr = ip_addr.s_addr;
-		ip_hdr->check = htons(checksum(ip_hdr, sizeof(struct iphdr)));
+		ip_hdr->check = checksum(ip_hdr, sizeof(struct iphdr));
 
 
 		/* TODO 1 Inițializați headerul de ICMP cu informațiile necesare.
@@ -151,7 +151,7 @@ void traceroute(int sockfd, struct in_addr ip_addr)
 		icmp_hdr->checksum = 0;
 		icmp_hdr->un.echo.id = ip_hdr->id;
 		icmp_hdr->un.echo.sequence = htons(my_ttl);
-		icmp_hdr->checksum = htons(checksum(icmp_hdr, sizeof(struct icmphdr)));
+		icmp_hdr->checksum = checksum(icmp_hdr, sizeof(struct icmphdr));
 		
 		struct packet reply;
 		double time_elapsed = time_packet(sockfd, &pkt, &reply);
